@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  animation: rotateLogo 5s linear infinite; /* Animação de rotação do logo */
+}
+
+@keyframes rotateLogo {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Opcional: Estilo para esconder a página enquanto a animação ocorre */
+.logo{
+  height: 30rem;
+  width: 20rem;
+}
