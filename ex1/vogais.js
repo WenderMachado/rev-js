@@ -10,6 +10,6 @@ function contarVogais(palavra) {
   return contador
 }}
 
-console.log(contarVogais("javascript"))
-console.log(contarVogais("PROGRAMAÇÃO"))
-console.log(contarVogais("rhythm"))
+console.log(contarVogais("javascra"))
+console.log(contarVogais("RRAÇÃO"))
+console.log(contarVogais("r)
