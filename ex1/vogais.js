@@ -12,4 +12,3 @@ function contarVogais(palavra) {
 
 console.log(contarVogais("javascra"))
 console.log(contarVogais("RRAÇÃO"))
-console.log(contarVogais("r)
