@@ -61,14 +61,14 @@ stackInputs.append(newRow)
 
 })
 
-form.addEventListener('submit', function (ev) {
+form.addEventListener('submit', (ev) => {
   ev.preventDefault()
 
   const fullnameInput = document.getElementById('fullname')
   const inputRows = document.querySelectorAll('.inputRow')
 
   let technologies = []
-  inputRows.forEach(function (row) {
+  inputRows.forEach((row) =>{
     // #rowId input[name="techName"]
     const techName = document.querySelector('#' + row.id + ' input[name="techName"]').value
     const techExp = document.querySelector('#' + row.id + ' input[type="radio"]:checked').value
