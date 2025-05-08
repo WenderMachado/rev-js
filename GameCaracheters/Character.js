@@ -6,7 +6,7 @@ class Character{
     this.defense = defense
   }
   atackMove(persona){
-    persona.lifePoints -= this.atack - this.defense
+    persona.lifePoints -= this.atack - persona.defense
     return persona
   }
 }

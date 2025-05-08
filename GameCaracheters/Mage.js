@@ -7,11 +7,13 @@ constructor ( name, lifePoints, atack, defense, magicPoints){
 }
 
   atackMove(persona){
-    persona.lifePoints -= (this.atack + this.magicPoints) - this.defense
+    persona.lifePoints -= (this.atack + this.magicPoints) - persona.defense
     return persona
   }
 
-  healign(persona){
+  healing(persona){
     persona.lifePoints += this.magicPoints + this.magicPoints
   }
 }
+
+module.exports = Mage

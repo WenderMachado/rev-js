@@ -6,7 +6,7 @@ constructor ( name, lifePoints, atack, defense){
 }
 
   atackMove(persona){
-    persona.lifePoints -= (this.atack * 2) - this.defense
+    persona.lifePoints -= (this.atack * 2) - persona.defense
     return persona
   }
 }
