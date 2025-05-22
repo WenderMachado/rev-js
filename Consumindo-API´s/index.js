@@ -1,6 +1,7 @@
 const form = document.getElementById('form')
 const busca = document.getElementById('busca')
 const cepInput = document.getElementById('cep')
+const section = document.getElementById('section')
 
 busca.addEventListener('click', handleClick)
 
@@ -26,7 +27,7 @@ function buscarCep(cep) {
       } else {
         const ul = document.createElement('ul')
         const li = document.createElement('li')
-        const section = document.getElementById('section')
+   
 
         li.innerText = `${data.localidade} - ${data.uf}`
 
@@ -39,4 +40,17 @@ function buscarCep(cep) {
     })
 }
 
-buscarCep(22250040)
+const btcDisplay = document.querySelector('#btc')
+async function fetchBtc() {
+  try{
+    const response = await fetch('https://blockchain.info/ticker')
+    const data = await response.json()
+    btcDisplay.innerText = (`R$ ${data.BRL.buy}`)
+    section.append(btcDisplay)
+    console.log(data)
+  }catch(error){
+    console.log(error)
+  }
+}
+// setInterval(fetchBtc, 5000)
+fetchBtc() 
