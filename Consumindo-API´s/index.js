@@ -54,3 +54,8 @@ async function fetchBtc() {
 }
 // setInterval(fetchBtc, 5000)
 fetchBtc() 
+
+function aiAi(){
+  console.log(`aaaaaaaa`)
+}
+console.log(`aaaaaa`)

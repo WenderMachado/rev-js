@@ -14,3 +14,5 @@ arthur.atackMove(cain)
 arthur.healing(cain)
 beatrice.atackMove(arthur)
 console.table({ arthur, beatrice, cain })
+
+console.table(`as`)
