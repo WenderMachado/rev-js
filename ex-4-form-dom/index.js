@@ -86,3 +86,10 @@ form.addEventListener('submit', (ev) => {
 
   console.log(developers)
 })
+
+confirm(`euq queroi`)
+
+
+function add(){
+  const btn = document.getElementById('aa')
+}
