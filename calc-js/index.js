@@ -11,6 +11,13 @@ document.querySelectorAll(".charKey").forEach( (charKeyBtn) => {
   })
 })
 
+document.getElementById('clear').addEventListener('click', ()=>{
+  input.value =''
+  input.focus()
+})
+
+document.getElementById('equal').addEventListener('click', calculate)
+// function calculate  abaixo -, chamada aqui por hosting
 input.addEventListener("keydown", (ev)=>{
   ev.preventDefault()
 
@@ -25,3 +32,11 @@ input.addEventListener("keydown", (ev)=>{
     calculate()
   }
 })
+
+function calculate() {
+  try {
+    resultInput.value = eval(input.value)
+  } catch (err) {
+    resultInput.value = "Erro"
+  }
+}
